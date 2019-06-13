@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/items", items);
 app.use("/user", require("./routes/users"));
+app.use("/posts", require("./routes/posts"));
 app.listen(9090, () => {
   console.log("Api is running...");
 });
